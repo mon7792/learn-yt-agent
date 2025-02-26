@@ -5,13 +5,12 @@ import {
   SignedIn,
   SignedOut,
   UserButton,
-  SignInButton,
-  SignUpButton,
 } from "@clerk/nextjs";
 
 // import { ThemeModeSwitcher } from "@/components/structure/Theme/theme-mode-switcher";
 import { Button } from "@/components/ui/button";
 import Logo from "../Logo";
+import { CustomSignInDialog } from "@/components/auth/sign-in";
 
 export function Header() {
   return (
@@ -38,12 +37,7 @@ export function Header() {
               </div>
             </SignedIn>
             <SignedOut>
-              <SignUpButton mode="modal">
-                <Button variant="outline">Sign Up</Button>
-              </SignUpButton>
-              <SignInButton mode="modal">
-                <Button>Login</Button>
-              </SignInButton>
+              <CustomSignInDialog />
             </SignedOut>
           </div>
         </div>
