@@ -7,7 +7,7 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 
-// import { ThemeModeSwitcher } from "@/components/structure/Theme/theme-mode-switcher";
+import { ThemeModeSwitcher } from "@/components/structure/Theme/theme-mode-switcher";
 import { Button } from "@/components/ui/button";
 import Logo from "../Logo";
 import { CustomSignInDialog } from "@/components/auth/sign-in";
@@ -27,7 +27,7 @@ export function Header() {
 
           {/* right section */}
           <div className="flex items-center gap-4">
-            {/* <ThemeModeSwitcher /> */}
+            <ThemeModeSwitcher />
             <SignedIn>
               <Link href="/manage-plan">
                 <Button>Manage Plan</Button>
