@@ -1,24 +1,24 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import { Feature } from "@/components/structure/Feature";
+import { Hero } from "@/components/structure/Hero";
+import { Pricing } from "@/components/structure/Pricing";
+import { Footer } from "@/components/structure/Footer";
+
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <h1 className="text-primary headline">Learn Seek</h1>
-      <Button>See features</Button>
-      <Card>
-        <CardHeader>
-          <CardTitle>Learn Seek</CardTitle>
-        </CardHeader>
-      </Card>
+    <main className="flex flex-col gap-4">
+     <br />
+     <br />
       {/* hero section */}
-      {/* <Hero /> */}
+      <Hero />
 
       {/* features section */}
-      {/* <Feature /> */}
+      <Feature />
 
-      {/* how it works section */}
+      {/* pricing section */}
+      <Pricing />
 
       {/* footer section */}
+      <Footer />
     </main>
   );
 }

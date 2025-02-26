@@ -85,11 +85,11 @@
   }
 
   .subhead {
-    @apply font-cabin font-medium text-[30px] leading-[1.4] tracking-subhead text-warm-grey-700 capitalize;
+    @apply font-cabin font-medium text-[30px] leading-[1.4] tracking-subhead text-gray-700 capitalize;
   }
 
   .body-text {
-    @apply font-cabin font-normal text-[18px] leading-[1.4] tracking-body text-warm-grey-700 capitalize;
+    @apply font-cabin font-normal text-[18px] leading-[1.4] tracking-body text-gray-700 capitalize;
   }
 
   .cta {
