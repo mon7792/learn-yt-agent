@@ -10,8 +10,8 @@ import {
   SignUpButton,
 } from "@clerk/nextjs";
 
+import { ThemeModeSwitcher } from "@/components/structure/Theme/theme-mode-switcher";
 import { Button } from "@/components/ui/button";
-
 export function Header() {
   return (
     <header className="sticky top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
@@ -33,6 +33,7 @@ export function Header() {
 
           {/* right section */}
           <div className="flex items-center gap-4">
+            <ThemeModeSwitcher />
             <SignedIn>
               <Link href="/manage-plan">
                 <Button>Manage Plan</Button>

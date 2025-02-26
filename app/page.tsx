@@ -1,15 +1,24 @@
-import { Hero } from "@/components/structure/Hero";
-import { Feature } from "@/components/structure/Feature";
 
+import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <h1 className="text-primary">Learn Seek</h1>
+      <Button>
+          See features
+      </Button>
+      <Card>
+        <CardHeader>
+          <CardTitle>Learn Seek</CardTitle>
+        </CardHeader>
+      </Card>
 
       {/* hero section */}
-      <Hero />
+      {/* <Hero /> */}
 
       {/* features section */}
-      <Feature />
+      {/* <Feature /> */}
 
       {/* how it works section */}
 
