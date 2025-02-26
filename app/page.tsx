@@ -1,20 +1,24 @@
-import { Hero } from "@/components/structure/Hero";
 import { Feature } from "@/components/structure/Feature";
+import { Hero } from "@/components/structure/Hero";
+import { Pricing } from "@/components/structure/Pricing";
+import { Footer } from "@/components/structure/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-
+    <main className="flex flex-col gap-4">
+     <br />
+     <br />
       {/* hero section */}
       <Hero />
 
       {/* features section */}
       <Feature />
 
-      {/* how it works section */}
+      {/* pricing section */}
+      <Pricing />
 
       {/* footer section */}
-
-    </main> 
+      <Footer />
+    </main>
   );
 }
