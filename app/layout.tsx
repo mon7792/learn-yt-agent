@@ -5,6 +5,7 @@ import { Header } from "@/components/structure/Header";
 
 import "./globals.css";
 import "./themes.css";
+import { ClerkProvider } from "@clerk/nextjs";
 
 
 const cabinFont = Cabin({
@@ -24,15 +25,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${cabinFont.variable} antialiased`}
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <body
+          className={`${cabinFont.variable} antialiased`}
       >
         <ClientWrapper>
           <Header />
           {children}
-        </ClientWrapper>
-      </body>
-    </html>
+          </ClientWrapper>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
