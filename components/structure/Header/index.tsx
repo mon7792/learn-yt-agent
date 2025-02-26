@@ -27,7 +27,7 @@ export function Header() {
                 height={32}
                 className="dark:invert"
               />
-              <h1 className="text-2xl font-bold">Learn YT</h1>
+              <h1 className="text-2xl font-bold">Learn Seek</h1>
             </Link>
           </div>
 
