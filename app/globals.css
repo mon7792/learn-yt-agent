@@ -77,3 +77,26 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@layer components {
+  .headline {
+    @apply font-cabin font-bold text-[120px] leading-none tracking-headline text-orange-200;
+  }
+
+  .subhead {
+    @apply font-cabin font-medium text-[30px] leading-[1.4] tracking-subhead text-warm-grey-700 capitalize;
+  }
+
+  .body-text {
+    @apply font-cabin font-normal text-[18px] leading-[1.4] tracking-body text-warm-grey-700 capitalize;
+  }
+
+  .cta {
+    @apply font-cabin font-bold text-[18px] tracking-body text-white capitalize;
+  }
+
+  .annotation {
+    @apply font-cabin font-normal text-[12px] leading-[1.4] tracking-body text-warm-grey-700 capitalize;
+  }
+}

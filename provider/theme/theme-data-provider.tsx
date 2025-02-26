@@ -15,18 +15,18 @@ const ThemeDataProvider = ({ children }: ThemeProviderProps) => {
   const getSavedThemeType = () => {
     try {
       if (typeof window === 'undefined') {
-        return 'Rose' as ThemeVariant
+        return 'Headspace' as ThemeVariant
       }
       return (
-        (window.localStorage.getItem('themeType') as ThemeVariant) || 'Rose'
+        (window.localStorage.getItem('themeType') as ThemeVariant) || 'Headspace'
       )
     } catch (error) {
       console.error(error)
-      return 'Rose' as ThemeVariant
+      return 'Headspace' as ThemeVariant
     }
   }
 
-  const [themeVariant, setThemeVariant] = useState<ThemeVariant>('Zinc')
+  const [themeVariant, setThemeVariant] = useState<ThemeVariant>('Headspace')
   const [isMounted, setIsMounted] = useState(false)
   const { theme } = useTheme()
 

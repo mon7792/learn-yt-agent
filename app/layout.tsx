@@ -1,19 +1,16 @@
 import { type Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cabin } from "next/font/google";
 import ClientWrapper from "@/provider/client";
 import { Header } from "@/components/structure/Header";
 
 import "./globals.css";
 import "./themes.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const cabinFont = Cabin({
+  variable: "--font-cabin",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -29,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cabinFont.variable} antialiased`}
       >
         <ClientWrapper>
           <Header />
